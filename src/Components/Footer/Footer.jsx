@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css"
+import {Github, Instagram, Linkedin} from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -25,19 +26,22 @@ const Footer = () => {
         </ul>
         <div className="footer__social">
           <a
-            href="https://www.instagram.com/kashanadnan772/"
+            href="https://www.instagram.com/Ace_shubham/"
             className="footer__social-link"
+            target="_blank"
           >
-            <i className="uil uil-instagram"></i>
-          </a>
-          <a href="https://www.dribble.com" className="footer__social-link">
-            <i className="uil uil-dribbble"></i>
+            <Instagram size={28} strokeWidth={1.5} />
+          </a> 
+          <a href="https://www.linkedin.com/in/ershubham007/" className="footer__social-link" target="_blank">
+            <Linkedin size={28} color="#ffffff" strokeWidth={1.5} />
           </a>
           <a
-            href="https://www.github.com/KashanAdnan"
+            href="https://www.github.com/codewithshubham007"
             className="footer__social-link"
+            target="_blank"
           >
-            <i className="uil uil-github-alt"></i>
+            {/* <i className="uil uil-github-alt"></i> */}
+            <Github size={28} color="#ffffff" strokeWidth={1.5} />
           </a>
         </div>
         <span className="footer__copy">&copy; Shubham. All rights reserved</span>
