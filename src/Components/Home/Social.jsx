@@ -8,6 +8,7 @@ const Social = () => {
         className="home__social-icon"
         target='_blank'
         rel="noreferrer"
+        data-aos="fade-down" data-aos-duration="2000"
       >
         <i className="uil uil-twitter-alt"></i>
       </a>
@@ -16,6 +17,7 @@ const Social = () => {
         className="home__social-icon"
         target='_blank'
         rel="noreferrer"
+        data-aos="fade-down" data-aos-duration="2500"
       >
         <i className="uil uil-linkedin"></i>
       </a>
@@ -24,6 +26,7 @@ const Social = () => {
         className="home__social-icon"
         target='_blank'
         rel="noreferrer"
+        data-aos="fade-down" data-aos-duration="3000"
       >
         <i className="uil uil-github-alt"></i>
       </a>
