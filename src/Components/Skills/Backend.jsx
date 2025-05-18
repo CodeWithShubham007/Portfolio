@@ -2,7 +2,7 @@ import React from "react";
 
 const Backend = () => {
   return (
-    <div className="skills__content">
+    <div data-aos="fade-right" data-aos-duration="1500" className="skills__content">
       <h3 className="skills__title">Backend & Learning Technology</h3>
       <div className="skills__box">
         <div className="skills__group">

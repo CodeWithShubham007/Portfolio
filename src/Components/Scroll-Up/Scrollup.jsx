@@ -11,7 +11,7 @@ const Scrollup = () => {
     }
   });
   return (
-    <a href="#" className="scrollup">
+    <a data-aos="fade-up" data-aos-duration="3000" href="#" className="scrollup">
       <i className="uil uil-arrow-up scrollup__icon"></i>
     </a>
   );

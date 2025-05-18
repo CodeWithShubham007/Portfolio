@@ -12,16 +12,16 @@ const About = () => {
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My introduction</span>
       <div className="about_container container grid">
-        <img src={AboutImg} className="about__img" alt="not found" />
+        <img data-aos="zoom-in" data-aos-duration="1500" src={AboutImg} className="about__img" alt="not found" />
         <div className="about__data">
           <Info />
-          <p className="about__description">
+          <p data-aos="fade-down" data-aos-duration="2500" className="about__description">
           Frontend Developer with 2.5+ years of experience in HTML, CSS, JavaScript, 
           React, Node.js, MongoDB, and Tailwind. Currently learning Next.js, 
           Generative AI, and AWS to enhance full-stack capabilities and stay 
           updated with modern development trends.
           </p>
-          <div className="doc_file">
+          <div data-aos="fade-down" data-aos-duration="3500" className="doc_file">
             <a href={CV} className="button button--flex" download="">
               Resume{" "} &nbsp;
               <FontAwesomeIcon icon={faFile} />

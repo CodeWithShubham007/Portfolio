@@ -12,7 +12,7 @@ const Qualification = () => {
       <span className="section__subtitle">My Personal Journey</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
-          <div
+          <div data-aos="fade-right" data-aos-duration="2500"
             className={
               toggleState === 1
                 ? "qualification__button qualification__active button--flex "
@@ -20,10 +20,10 @@ const Qualification = () => {
             }
             onClick={() => toggleTab(1)}
           >
-            <i className="uil uil-graduation-cap qualification__icon"></i>
+            <i  className="uil uil-graduation-cap qualification__icon"></i>
             Education
           </div>
-          <div
+          <div data-aos="fade-right" data-aos-duration="1500"
             className={
               toggleState === 2
                 ? "qualification__button qualification__active button--flex "
@@ -44,7 +44,7 @@ const Qualification = () => {
             }
           >
             <div className="qualification__data">
-              <div>
+              <div data-aos="fade-down" data-aos-duration="1500" >
                 <h3 className="qualification__title">B.Tech - (IT)</h3>
                 <span className="qualification__subtitle">KIT Kolhapur</span>
                 <div className="qualification__calendar">
@@ -62,7 +62,7 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
+              <div data-aos="fade-down" data-aos-duration="2500">
                 <h3 className="qualification__title">Frontend Developer</h3>
                 <span className="qualification__subtitle">
                  CollegeDekho
@@ -73,7 +73,7 @@ const Qualification = () => {
               </div>
             </div>
             <div className="qualification__data">
-              <div>
+              <div data-aos="fade-down" data-aos-duration="3500">
                 <h3 className="qualification__title">Intermediate (Sci.)</h3>
                 <span className="qualification__subtitle">S.A.E College Jamui</span>
                 <div className="qualification__calendar">
@@ -91,7 +91,7 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
+              <div data-aos="fade-down" data-aos-duration="4500">
                 <h3 className="qualification__title">Full Stack - Intern</h3>
                 <span className="qualification__subtitle">
                   PrepBytes
@@ -102,7 +102,7 @@ const Qualification = () => {
               </div>
             </div>
             <div className="qualification__data">
-              <div>
+              <div data-aos="fade-down" data-aos-duration="5500">
                 <h3 className="qualification__title">Matriculation</h3>
                 <span className="qualification__subtitle">Jagdamba H/S Kumar, Jamui</span>
                 <div className="qualification__calendar">

@@ -28,7 +28,7 @@ const Works = () => {
       <div className="work__filters">
         {projectsNav.map((item, index) => {
           return (
-            <span
+            <span data-aos="fade-right" data-aos-duration="2000"
               onClick={(e) => {
                 handleClick(e, index);
               }}

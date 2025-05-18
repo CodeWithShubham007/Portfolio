@@ -4,22 +4,22 @@ import {Github, Instagram, Linkedin} from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer  className="footer">
       <div className="footer__container">
-        <h1 className="footer__title">Shubham</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000" className="footer__title">Shubham</h1>
         <ul className="footer__list">
           <li>
-            <a href="#about" className="footer__link">
+            <a data-aos="fade-down" data-aos-duration="1000" href="#about" className="footer__link">
               About
             </a>
           </li>
           <li>
-            <a href="#work" className="footer__link">
+            <a data-aos="fade-down" data-aos-duration="2000" href="#work" className="footer__link">
               Projects
             </a>
           </li>
           <li>
-            <a href="#testimonials" className="footer__link">
+            <a data-aos="fade-down" data-aos-duration="3000" href="#testimonials" className="footer__link">
               Testimonial
             </a>
           </li>
@@ -29,16 +29,23 @@ const Footer = () => {
             href="https://www.instagram.com/Ace_shubham/"
             className="footer__social-link"
             target="_blank"
+            data-aos="fade-down" data-aos-duration="1000"
           >
             <Instagram size={28} strokeWidth={1.5} />
           </a> 
-          <a href="https://www.linkedin.com/in/ershubham007/" className="footer__social-link" target="_blank">
+          <a 
+            href="https://www.linkedin.com/in/ershubham007/" 
+            className="footer__social-link" 
+            target="_blank"
+            data-aos="fade-down" data-aos-duration="2000"
+          >
             <Linkedin size={28} color="#ffffff" strokeWidth={1.5} />
           </a>
           <a
             href="https://www.github.com/codewithshubham007"
             className="footer__social-link"
             target="_blank"
+            data-aos="fade-down" data-aos-duration="3000"
           >
             {/* <i className="uil uil-github-alt"></i> */}
             <Github size={28} color="#ffffff" strokeWidth={1.5} />
