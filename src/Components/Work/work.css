@@ -69,6 +69,12 @@
     color: var(--container-color);
 }
 
+/* message */
+.section__message{
+    text-align: center;
+    color: brown;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
