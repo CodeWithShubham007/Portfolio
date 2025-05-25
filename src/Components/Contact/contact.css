@@ -104,6 +104,8 @@
 }
 
 .contact__form-area textarea {
+    width: 100% !important;
+    height: 70% !important ;
     resize: none;
 }
 
@@ -140,6 +142,7 @@
         
     }
 }
+
 
 /* For small devices */
 @media screen and (max-width: 350px) {}

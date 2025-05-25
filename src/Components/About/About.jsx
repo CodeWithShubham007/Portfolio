@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/Main.jpg";
-import CV from "../../assets/Shubham_Kumar.pdf";
+import Resume from "../../assets/Shubham_Kumar.pdf";
 import Info from "./Info";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
@@ -22,12 +22,8 @@ const About = () => {
           updated with modern development trends.
           </p>
           <div data-aos="fade-down" data-aos-duration="3500" className="doc_file">
-            <a href={CV} className="button button--flex" download="">
+            <a href={Resume} className="button button--flex" download="">
               Resume{" "} &nbsp;
-              <FontAwesomeIcon icon={faFile} />
-            </a>
-            <a href={CV} className="button button--flex" download="">
-              CV{" "} &nbsp;
               <FontAwesomeIcon icon={faFile} />
             </a>
           </div>

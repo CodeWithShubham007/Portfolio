@@ -10,10 +10,24 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
 
+      const form = e.target;
+
+  // Get values
+      const name = form.user_name.value.trim();
+      const subject = form.user_subject.value.trim();
+      const email = form.user_email.value.trim();
+      const message = form.user_message.value.trim();
+
+  // Simple validation
+      if (!name || !subject || !email || !message) {
+        toast.error("Please fill in all the fields.");
+        return;
+      }
+
       emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
             toast.success("Message sent successfully")
-            e.target.reset();
+            form.reset();
           },(error) => {
             toast.error("Something went wrong");
           }
@@ -86,7 +100,7 @@ const Contact = () => {
             </div>
             <div className="contact__form-div contact__form-area">
               <label className="contact__form-tags">Message</label>
-              <textarea type="text" name="user_message" className="contact__form-input" placeholder="Write your Message" cols={30} rows={10}></textarea>
+              <textarea type="text" name="user_message" className="contact__form-input" placeholder="Write your Message" cols={10} rows={1}></textarea>
             </div>
             <button className="button button--flex">
               Send Message &nbsp; <Send />
@@ -94,7 +108,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </section>
   );
 };
