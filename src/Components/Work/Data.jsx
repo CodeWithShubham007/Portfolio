@@ -10,65 +10,65 @@ export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "Syed Tariq Ahmed Web",
+    title: "Mausam Jankari",
     category: "web",
-    link: "https://kashanadnan.github.io/English-Languge-Website/public/",
+    link: "https://weather-app-one-delta-22.vercel.app/",
   },
-  {
-    id: 2,
-    image: Work6,
-    title: "Sports Web MPC ",
-    category: "web",
-    link: "https://kashanadnan.github.io/Sports-Website-FrontEnd/",
-  },
-  {
-    id: 3,
-    image: Work7,
-    title: "Youtube clone (Frontend)",
-    category: "web",
-    link: "https://kashanadnan.github.io/Youtube-UI/",
-  },
-  {
-    id: 5,
-    image: Work5,
-    title: "Facebook clone (Frontend)",
-    link: "https://kashanadnan.github.io/Facebook-UI-Design/",
-    category: "web",
-  },
-  {
-    id: 6,
-    image: Work10,
-    title: "Tech Education Website",
-    link: "https://kashanadnan.github.io/Tic-Tac-Toe/",
-    category: "web",
-  },
-  {
-    id: 7,
-    image: Work11,
-    title: "Daraz clone (Frontend)",
-    link: "https://kashanadnan.github.io/Tic-Tac-Toe/",
-    category: "web",
-  },
-  {
-    id: 8,
-    image: Work15,
-    title: "Weather App",
-    link: "https://kashanadnan.github.io/Tic-Tac-Toe/",
-    category: "app",
-  },
+  // {
+  //   id: 2,
+  //   image: Work6,
+  //   title: "Sports Web MPC ",
+  //   category: "web",
+  //   link: "https://kashanadnan.github.io/Sports-Website-FrontEnd/",
+  // },
+  // {
+  //   id: 3,
+  //   image: Work7,
+  //   title: "Youtube clone (Frontend)",
+  //   category: "web",
+  //   link: "https://kashanadnan.github.io/Youtube-UI/",
+  // },
+  // {
+  //   id: 5,
+  //   image: Work5,
+  //   title: "Facebook clone (Frontend)",
+  //   link: "https://kashanadnan.github.io/Facebook-UI-Design/",
+  //   category: "web",
+  // },
+  // {
+  //   id: 6,
+  //   image: Work10,
+  //   title: "Tech Education Website",
+  //   link: "https://kashanadnan.github.io/Tic-Tac-Toe/",
+  //   category: "web",
+  // },
+  // {
+  //   id: 7,
+  //   image: Work11,
+  //   title: "Daraz clone (Frontend)",
+  //   link: "https://kashanadnan.github.io/Tic-Tac-Toe/",
+  //   category: "web",
+  // },
+  // {
+  //   id: 8,
+  //   image: Work15,
+  //   title: "Weather App",
+  //   link: "https://kashanadnan.github.io/Tic-Tac-Toe/",
+  //   category: "app",
+  // },
 ];
 
 export const projectsNav = [
-  {
-    name: "all",
-  },
+  // {
+  //   name: "all",
+  // },
   {
     name: "web",
   },
-  {
-    name: "games",
-  },
-  {
-    name: "app",
-  },
+  // {
+  //   name: "games",
+  // },
+  // {
+  //   name: "app",
+  // },
 ];

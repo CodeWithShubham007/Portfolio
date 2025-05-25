@@ -14,13 +14,18 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a data-aos="fade-down" data-aos-duration="2000" href="#work" className="footer__link">
+            <a data-aos="fade-down" data-aos-duration="2000" href="#projects" className="footer__link">
               Projects
             </a>
           </li>
           <li>
-            <a data-aos="fade-down" data-aos-duration="3000" href="#testimonials" className="footer__link">
-              Testimonial
+            <a data-aos="fade-down" data-aos-duration="3000" href="#contact" className="footer__link">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a data-aos="fade-down" data-aos-duration="4000" href="#skills" className="footer__link">
+              Skills
             </a>
           </li>
         </ul>

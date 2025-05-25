@@ -11,6 +11,8 @@ import Scrollup from "./Components/Scroll-Up/Scrollup";
 import Work from "./Components/Work/Work";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const App = () => {
   

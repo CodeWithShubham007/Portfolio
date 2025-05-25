@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./contact.css"
 import {Send, Phone} from 'lucide-react';
-import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Contact = () => {
     const form = useRef();
@@ -11,19 +10,12 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
 
-      emailjs
-        .sendForm(
-          "service_niz40sz",
-          "template_aqj260o",
-          form.current,
-          "hCYRUNRJVkV_96qpY"
-        )
-        .then(
-          (result) => {
-            alert("Sent")
-          },
-          (error) => {
-            console.log(error.text);
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
+        .then((result) => {
+            toast.success("Message sent successfully")
+            e.target.reset();
+          },(error) => {
+            toast.error("Something went wrong");
           }
         );
     };
@@ -44,6 +36,7 @@ const Contact = () => {
                 href="mailto:codewithshubham007@gmail.com"
                 className="contact__button"
                 target='_blank'
+                rel='noreferrer'
               >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -57,6 +50,7 @@ const Contact = () => {
                 href="https://api.whatsapp.com/send?phone=7549831252&text=Hello, more information!"
                 className="contact__button"
                 target='_blank'
+                rel='noreferrer'
               >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -80,32 +74,19 @@ const Contact = () => {
           <form className="cantact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="contact__form-tags">Name</label>
-              <input
-                type="text"
-                name="name"
-                className="contact__form-input"
-                placeholder="Insert your Name"
-              />
+              <input type="text" name="user_name" className="contact__form-input" placeholder="Insert your Name"/>
+            </div>
+            <div className="contact__form-div">
+              <label className="contact__form-tags">Subject</label>
+              <input type="text" name="user_subject" className="contact__form-input" placeholder="Insert your Subject"/>
             </div>
             <div className="contact__form-div">
               <label className="contact__form-tags">Maill</label>
-              <input
-                type="email"
-                name="email"
-                className="contact__form-input"
-                placeholder="Insert your Email"
-              />
+              <input type="email" name="user_email" className="contact__form-input" placeholder="Insert your Email"/>
             </div>
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tags">Project</label>
-              <textarea
-                type="text"
-                name="project"
-                className="contact__form-input"
-                placeholder="Write your Project"
-                cols={30}
-                rows={10}
-              ></textarea>
+              <label className="contact__form-tags">Message</label>
+              <textarea type="text" name="user_message" className="contact__form-input" placeholder="Write your Message" cols={30} rows={10}></textarea>
             </div>
             <button className="button button--flex">
               Send Message &nbsp; <Send />
@@ -113,6 +94,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <ToastContainer position="top-right" autoClose={3000} />
     </section>
   );
 };
