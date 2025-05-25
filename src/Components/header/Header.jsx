@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a data-aos="fade-right" href="index.html" className="nav__logo">
+        <a data-aos="fade-right" href="#home" className="nav__logo">
           Shubham
         </a>
         <div className={Toggle ? "nav_menu show_menu" : "nav_menu"}>
